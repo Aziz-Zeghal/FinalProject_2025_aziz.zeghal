@@ -10,6 +10,7 @@ This repository contains the implementation of a short video recommender system 
 - [Dataset](#dataset)
 - [Models](#models)
     - [Model 1: ALS](#model-1-als)
+    - [Model 2: Two-Tower Neural Network](#model-2-two-tower-neural-network)
 
 ## Setup
 Set up the environment using Conda:
@@ -34,4 +35,8 @@ Multiple models were tested for this project.
 ### Model 1: ALS
 The Alternating Least Squares (ALS) model was initialy implemented using the `implicit` library, and later changed to `pyspark.ml.recommendation` for better scalability. This library enables hyperparameter tuning and model evaluation using cross-validation.
 
-I encountered problems training the ALS model only with the `small_matrix.csv` dataset. So I used the sparse dataset `big_matrix.csv` instead. 
+I encountered problems training the ALS model with the `big_matrix.csv` dataset. So I used the dataset `small_matrix.csv` instead.
+
+This model uses small_matrix's information only (watch_ratio). For evaluation, `kuairec_caption_category.csv` was used to get the caption of the recommended videos.
+
+### Model 2: Two-Tower Neural Network

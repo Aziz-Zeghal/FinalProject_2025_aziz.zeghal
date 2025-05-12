@@ -1,6 +1,6 @@
 # Short Video Recommender System (KuaiRec)
 
-This repository contains the implementation of a short video recommender system with the KuaiRec dataset.
+This repository contains the implementation of different short video recommender systems with the KuaiRec dataset.
 
 ---
 

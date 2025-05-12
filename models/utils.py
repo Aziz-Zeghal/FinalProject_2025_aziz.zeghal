@@ -15,7 +15,11 @@ def get_data_path() -> str:
     if not os.path.exists(DATA_PATH):
         DATA_PATH = f"{os.getcwd()}/KuaiRec/data"
     if not os.path.exists(DATA_PATH):
+        DATA_PATH = f"{os.getcwd()}/../KuaiRec/data"
+    if not os.path.exists(DATA_PATH):
         DATA_PATH = f"{os.getcwd()}/KuaiRec 2.0/data"
+    if not os.path.exists(DATA_PATH):
+        DATA_PATH = f"{os.getcwd()}/../KuaiRec 2.0/data"
     if not os.path.exists(DATA_PATH):
         raise FileNotFoundError("KuaiRec dataset not found. Please check the path.")
 

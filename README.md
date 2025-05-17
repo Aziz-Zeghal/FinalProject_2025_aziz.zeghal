@@ -2,6 +2,7 @@
 
 This repository contains the implementation of different short video recommender systems with the KuaiRec dataset.
 
+The main focus of the project was the *Two-Tower Neural Network* model.
 ---
 
 ## **Table of Contents**
@@ -43,8 +44,6 @@ For more detail, you can check the `EDA.ipynb` notebook.
 
 ## Models
 Multiple models were tested for this project. They are listed in chronological order of implementation in the report.
-
-The main focus of the project was the *Two-Tower Neural Network* model.
 
 ### Model 1: ALS
 The Alternating Least Squares (ALS) model was initialy implemented using the `implicit` library, and later changed to `pyspark.ml.recommendation` for better scalability. This library enables hyperparameter tuning and model evaluation using cross-validation.

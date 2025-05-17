@@ -3,6 +3,7 @@
 This repository contains the implementation of different short video recommender systems with the KuaiRec dataset.
 
 The main focus of the project was the *Two-Tower Neural Network* model.
+
 ---
 
 ## **Table of Contents**

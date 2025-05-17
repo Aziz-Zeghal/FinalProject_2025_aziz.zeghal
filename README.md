@@ -44,7 +44,7 @@ The exploratory data analysis was performed on all the elements of the dataset.
 For more detail, you can check the `EDA.ipynb` notebook.
 
 ## Models
-Multiple models were tested for this project. They are listed in chronological order of implementation in the report.
+Multiple models were tested for this project. They are listed in chronological order of implementation in the `Report.pdf` file.
 
 ### Model 1: ALS
 The Alternating Least Squares (ALS) model was initialy implemented using the `implicit` library, and later changed to `pyspark.ml.recommendation` for better scalability. This library enables hyperparameter tuning and model evaluation using cross-validation.

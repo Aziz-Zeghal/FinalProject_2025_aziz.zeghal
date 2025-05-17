@@ -49,7 +49,7 @@ Multiple models were tested for this project. They are listed in chronological o
 ### Model 1: ALS
 The Alternating Least Squares (ALS) model was initialy implemented using the `implicit` library, and later changed to `pyspark.ml.recommendation` for better scalability. This library enables hyperparameter tuning and model evaluation using cross-validation.
 
-FOr more detail, you can check the `ALS.ipynb` notebook.
+For more detail, you can check the `ALS.ipynb` notebook.
 
 ### Model 2: Two-Tower Neural Network
 The Two-Tower Neural Network model was more promising than the ALS model, and easier to use. It was implemented using the Keras library. The model uses a subset of `big_matrix.csv` for training and a subset of `small_matrix.csv` for evaluation.
